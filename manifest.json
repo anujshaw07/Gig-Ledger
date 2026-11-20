@@ -1,0 +1,12 @@
+
+{
+  "name": "GigLedger",
+  "short_name": "GigLedger",
+  "description": "Income and expense management for India's gig workers",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#052b68",
+  "theme_color": "#0759bd",
+  "orientation": "portrait"
+}
