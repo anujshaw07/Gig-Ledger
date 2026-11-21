@@ -11,67 +11,231 @@
 </head>
 <body>
 
-<!-- AUTHENTICATION -->
 <section id="authScreen" class="auth-screen">
-  <div class="auth-card">
-    <div class="auth-brand">
-      <div class="logo">G</div>
-      <h1>GIGLEDGER</h1>
-      <p>YOUR WORK. ONE LEDGER.</p>
+  
+<div class="auth-video-wrap">
+  <div class="motion-city">
+    <div class="city-glow glow-one"></div>
+    <div class="city-glow glow-two"></div>
+    <div class="city-glow glow-three"></div>
+
+    <div class="city-skyline">
+      <div class="building building-one"></div>
+      <div class="building building-two"></div>
+      <div class="building building-three"></div>
+      <div class="building building-four"></div>
+      <div class="building building-five"></div>
+      <div class="building building-six"></div>
+      <div class="building building-seven"></div>
     </div>
 
-    <div class="auth-tabs">
-      <button id="showLogin" class="auth-tab active" type="button">Login</button>
-      <button id="showRegister" class="auth-tab" type="button">Create account</button>
+    <div class="road">
+      <div class="road-line"></div>
+      <div class="road-light light-one"></div>
+      <div class="road-light light-two"></div>
+      <div class="road-light light-three"></div>
     </div>
 
-    <form id="loginForm">
-      <h2>Welcome back!</h2>
-      <p>Access your personal financial dashboard.</p>
+    <div class="delivery-rider rider-one">
+      <div class="rider-order">ORDER #2048</div>
+      <div class="rider-body"></div>
+      <div class="rider-head"></div>
+      <div class="rider-bag">G</div>
+      <div class="rider-bike">
+        <span class="wheel wheel-left"></span>
+        <span class="wheel wheel-right"></span>
+        <span class="bike-frame"></span>
+      </div>
+    </div>
 
-      <label>GigLedger ID</label>
-      <input id="loginId" autocomplete="username" required placeholder="Enter your username">
+    <div class="delivery-rider rider-two">
+      <div class="rider-body"></div>
+      <div class="rider-head"></div>
+      <div class="rider-bike">
+        <span class="wheel wheel-left"></span>
+        <span class="wheel wheel-right"></span>
+        <span class="bike-frame"></span>
+      </div>
+    </div>
 
-      <label>Password</label>
-      <input id="loginPassword" type="password" autocomplete="current-password" required placeholder="Enter password">
+    <div class="floating-notification notification-one">
+      <span class="notification-icon">↗</span>
+      <div>
+        <strong>Delivery completed</strong>
+        <small>Swiggy · ₹185 earned</small>
+      </div>
+    </div>
 
-      <button class="primary-btn full-btn" type="submit">Login to GigLedger →</button>
-      <div id="loginError" class="error-message"></div>
-    </form>
+    <div class="floating-notification notification-two">
+      <span class="notification-icon green-icon">₹</span>
+      <div>
+        <strong>Payment received</strong>
+        <small>Freelance · ₹1,250</small>
+      </div>
+    </div>
 
-    <form id="registerForm" hidden>
-      <h2>Create your account</h2>
-      <p>Start managing all your earnings in one place.</p>
+    <div class="floating-notification notification-three">
+      <span class="notification-icon orange-icon">!</span>
+      <div>
+        <strong>Payout mismatch?</strong>
+        <small>Multiple records to check</small>
+      </div>
+    </div>
 
-      <label>Full name</label>
-      <input id="registerName" required maxlength="70" placeholder="Your full name">
+    <div class="floating-earnings">
+      <small>TODAY'S EARNINGS</small>
+      <strong>₹2,450</strong>
+      <span>↑ Multiple income streams</span>
+      <div class="earnings-bars">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+    </div>
 
-      <label>Choose your GigLedger ID</label>
-      <input id="registerId" required minlength="4" maxlength="24"
-        pattern="[a-zA-Z0-9_]+" placeholder="e.g. anujshaw07">
+    <div class="motion-caption">
+      <span class="motion-dot"></span>
+      THE GIG WORKER'S EVERYDAY REALITY
+    </div>
+  </div>
+  <div class="video-overlay"></div>
+</div>
 
-      <label>City</label>
-      <input id="registerCity" required maxlength="60" placeholder="e.g. Kolkata">
 
-      <label>Create password</label>
-      <input id="registerPassword" type="password" required minlength="8"
-        autocomplete="new-password" placeholder="At least 8 characters">
+  <div class="auth-story">
+    <div class="story-brand">
+      <svg class="gig-logo" viewBox="0 0 100 100" role="img" aria-label="GigLedger logo">
+        <path d="M50 9 A41 41 0 0 0 50 91" fill="none" stroke="#75eaff" stroke-width="13" stroke-linecap="round"/>
+        <path d="M50 9 A41 41 0 0 1 50 91" fill="none" stroke="#00a875" stroke-width="13" stroke-linecap="round"/>
+        <path d="M23 60 L39 60 L48 44 L59 54 L76 32 M69 32 H76 V40" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div>
+        <div class="story-brand-name">GigLedger</div>
+        <div class="story-brand-tag">YOUR WORK. ONE LEDGER.</div>
+      </div>
+    </div>
 
-      <label>Confirm password</label>
-      <input id="confirmPassword" type="password" required
-        autocomplete="new-password" placeholder="Confirm password">
+    <div class="story-content">
+      <div class="story-kicker"><span class="pulse-dot"></span> BUILT FOR INDIA'S GIG WORKFORCE</div>
+      <h1>Different apps.<br>Different payouts.<br><span>One clear picture.</span></h1>
+      <p>Delivery shifts, rides and freelance projects can mean income scattered across multiple platforms. GigLedger brings your earnings and expenses together in one place.</p>
 
-      <button class="primary-btn full-btn" type="submit">Create my GigLedger ID →</button>
-      <div id="registerError" class="error-message"></div>
-    </form>
+      <div class="problem-list">
+        <div><span>×</span> Multiple income sources</div>
+        <div><span>×</span> Confusing payout records</div>
+        <div><span>×</span> Hard-to-track expenses</div>
+        <div><span>×</span> No single earnings view</div>
+      </div>
 
-    <div class="auth-note">🔒 Demo application. Accounts and records are stored locally in this browser.</div>
+      <div class="story-solution">
+        <span class="solution-icon">✓</span>
+        <div>
+          <strong>One place. Every earning.</strong>
+          <small>See your financial picture with greater clarity.</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="story-footer">
+      <span>INCOME CLARITY</span><span>•</span>
+      <span>SMART TRACKING</span><span>•</span>
+      <span>ONE LEDGER</span>
+    </div>
+  </div>
+
+  <div class="auth-panel-wrap">
+    <div class="auth-card">
+      <div class="auth-brand">
+        <div class="auth-logo-wrap">
+          <svg class="auth-logo" viewBox="0 0 100 100" role="img" aria-label="GigLedger">
+            <path d="M50 9 A41 41 0 0 0 50 91" fill="none" stroke="#0879ed" stroke-width="13" stroke-linecap="round"/>
+            <path d="M50 9 A41 41 0 0 1 50 91" fill="none" stroke="#00ad7b" stroke-width="13" stroke-linecap="round"/>
+            <path d="M23 60 L39 60 L48 44 L59 54 L76 32 M69 32 H76 V40" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h1>GigLedger</h1>
+        <p>YOUR WORK. ONE LEDGER.</p>
+      </div>
+
+      <div class="auth-tabs">
+        <button id="showLogin" class="auth-tab active" type="button">Login</button>
+        <button id="showRegister" class="auth-tab" type="button">Create account</button>
+      </div>
+
+      <form id="loginForm">
+        <h2>Welcome back!</h2>
+        <p>Access your personal financial dashboard.</p>
+
+        <label for="loginId">GigLedger ID</label>
+        <input id="loginId" autocomplete="username" required placeholder="Enter your username">
+
+        <label for="loginPassword">Password</label>
+        <div class="password-wrap">
+          <input id="loginPassword" type="password" autocomplete="current-password" required placeholder="Enter password">
+          <button type="button" class="password-toggle" data-toggle-password="loginPassword" aria-label="Show password">
+            <svg viewBox="0 0 24 24">
+              <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+          </button>
+        </div>
+
+        <button class="primary-btn full-btn" type="submit">Login to GigLedger →</button>
+        <div id="loginError" class="error-message"></div>
+      </form>
+
+      <form id="registerForm" hidden>
+        <h2>Create your account</h2>
+        <p>Start managing all your earnings in one place.</p>
+
+        <label for="registerName">Full name</label>
+        <input id="registerName" required maxlength="70" placeholder="Your full name">
+
+        <label for="registerId">Choose your GigLedger ID</label>
+        <input id="registerId" required minlength="4" maxlength="24" pattern="[a-zA-Z0-9_]+" placeholder="e.g. anujshaw07">
+
+        <label for="registerCity">City</label>
+        <input id="registerCity" required maxlength="60" placeholder="e.g. Kolkata">
+
+        <label for="registerPassword">Create password</label>
+        <div class="password-wrap">
+          <input id="registerPassword" type="password" required minlength="8" autocomplete="new-password" placeholder="At least 8 characters">
+          <button type="button" class="password-toggle" data-toggle-password="registerPassword" aria-label="Show password">
+            <svg viewBox="0 0 24 24">
+              <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+          </button>
+        </div>
+
+        <label for="confirmPassword">Confirm password</label>
+        <div class="password-wrap">
+          <input id="confirmPassword" type="password" required autocomplete="new-password" placeholder="Confirm password">
+          <button type="button" class="password-toggle" data-toggle-password="confirmPassword" aria-label="Show password">
+            <svg viewBox="0 0 24 24">
+              <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+          </button>
+        </div>
+
+        <button class="primary-btn full-btn" type="submit">Create my GigLedger ID →</button>
+        <div id="registerError" class="error-message"></div>
+      </form>
+
+      <div class="demo-box">
+        <div class="demo-copy">
+          <span class="demo-kicker">QUICK DEMO ACCESS</span>
+          <strong>Explore GigLedger instantly</strong>
+          <small>Demo account · no registration required</small>
+        </div>
+        <button type="button" id="demoLogin" class="demo-btn">Try demo →</button>
+      </div>
+
+      <div class="auth-note">Demo application. Accounts and records are stored locally in this browser.</div>
+    </div>
   </div>
 </section>
 
-<!-- MAIN APPLICATION -->
 <div id="appScreen" hidden>
-
   <header class="header">
     <a href="#" class="brand">
       <span class="logo small-logo">G</span>
@@ -95,19 +259,19 @@
   </header>
 
   <main class="container">
-
-    <!-- OVERVIEW -->
     <section id="overviewPage" class="page active">
-
       <div class="hero">
         <div class="hero-copy">
           <span class="eyebrow light-eyebrow">YOUR FINANCIAL WORKSPACE</span>
           <h1>Your work.<br><span>One ledger.</span></h1>
           <p>Every platform. Every side hustle. One clear picture of your earnings.</p>
+          
           <div class="hero-actions">
             <button class="primary-btn" id="heroAdd">＋ Add earnings</button>
             <button class="glass-btn" data-goto="statement">View statement ↗</button>
+            <button class="glass-btn" id="openSmartImport">⇧ Smart Import</button>
           </div>
+
         </div>
 
         <div class="hero-visual">
@@ -143,19 +307,16 @@
           <strong id="totalIncome">₹0</strong>
           <small>From all earning sources</small>
         </article>
-
         <article class="stat-card">
           <div class="stat-top"><span>Total expenses</span><span>↘</span></div>
           <strong id="totalExpenses">₹0</strong>
           <small>Fuel, food and work costs</small>
         </article>
-
         <article class="stat-card">
           <div class="stat-top"><span>Net earnings</span><span>◈</span></div>
           <strong id="netEarnings">₹0</strong>
           <small>Income minus expenses</small>
         </article>
-
         <article class="stat-card">
           <div class="stat-top"><span>Transactions</span><span>▤</span></div>
           <strong id="entryCount">0</strong>
@@ -173,111 +334,55 @@
       </div>
 
       <div class="platform-grid">
-        <button class="platform-card" data-source="Swiggy">
-          <span class="platform-icon swiggy">S</span>
-          <span><b>Swiggy</b><small>Food delivery</small></span>
-          <strong id="srcSwiggy">₹0</strong>
-        </button>
-        <button class="platform-card" data-source="Zomato">
-          <span class="platform-icon zomato">Z</span>
-          <span><b>Zomato</b><small>Food delivery</small></span>
-          <strong id="srcZomato">₹0</strong>
-        </button>
-        <button class="platform-card" data-source="Uber">
-          <span class="platform-icon uber">U</span>
-          <span><b>Uber</b><small>Ride services</small></span>
-          <strong id="srcUber">₹0</strong>
-        </button>
-        <button class="platform-card" data-source="Rapido">
-          <span class="platform-icon rapido">R</span>
-          <span><b>Rapido</b><small>Bike taxi</small></span>
-          <strong id="srcRapido">₹0</strong>
-        </button>
-        <button class="platform-card" data-source="Ola">
-          <span class="platform-icon ola">O</span>
-          <span><b>Ola</b><small>Ride services</small></span>
-          <strong id="srcOla">₹0</strong>
-        </button>
-        <button class="platform-card" data-source="Private rides">
-          <span class="platform-icon private">P</span>
-          <span><b>Private rides</b><small>Independent work</small></span>
-          <strong id="srcPrivate">₹0</strong>
-        </button>
-        <button class="platform-card" data-source="Freelance work">
-          <span class="platform-icon freelance">F</span>
-          <span><b>Freelance</b><small>Side projects</small></span>
-          <strong id="srcFreelance">₹0</strong>
-        </button>
-        <button class="platform-card" data-source="Part-time job">
-          <span class="platform-icon parttime">J</span>
-          <span><b>Part-time job</b><small>Other employment</small></span>
-          <strong id="srcParttime">₹0</strong>
-        </button>
-        <button class="platform-card" data-source="Other income">
-          <span class="platform-icon other">+</span>
-          <span><b>Other income</b><small>Additional earnings</small></span>
-          <strong id="srcOther">₹0</strong>
-        </button>
+        <button class="platform-card" data-source="Swiggy"><span class="platform-icon swiggy brand-logo"><img src="https://cdn.simpleicons.org/swiggy/FC8019" alt="Swiggy logo" loading="lazy"></span><span><b>Swiggy</b><small>Food delivery</small></span><strong id="srcSwiggy">₹0</strong></button>
+        <button class="platform-card" data-source="Zomato"><span class="platform-icon zomato brand-logo"><img src="https://cdn.simpleicons.org/zomato/E23744" alt="Zomato logo" loading="lazy"></span><span><b>Zomato</b><small>Food delivery</small></span><strong id="srcZomato">₹0</strong></button>
+        <button class="platform-card" data-source="Uber"><span class="platform-icon uber brand-logo"><img src="https://cdn.simpleicons.org/uber/000000" alt="Uber logo" loading="lazy"></span><span><b>Uber</b><small>Ride services</small></span><strong id="srcUber">₹0</strong></button>
+        <button class="platform-card" data-source="Rapido"><span class="platform-icon rapido brand-logo rapido-wordmark" role="img" aria-label="Rapido logo"><span>R</span></span><span><b>Rapido</b><small>Bike taxi</small></span><strong id="srcRapido">₹0</strong></button>
+        <button class="platform-card" data-source="Ola"><span class="platform-icon ola brand-logo ola-wordmark" role="img" aria-label="Ola logo"><span>O</span></span><span><b>Ola</b><small>Ride services</small></span><strong id="srcOla">₹0</strong></button>
+        <button class="platform-card" data-source="Private rides"><span class="platform-icon private">P</span><span><b>Private rides</b><small>Independent work</small></span><strong id="srcPrivate">₹0</strong></button>
+        <button class="platform-card" data-source="Freelance work"><span class="platform-icon freelance">F</span><span><b>Freelance</b><small>Side projects</small></span><strong id="srcFreelance">₹0</strong></button>
+        <button class="platform-card" data-source="Part-time job"><span class="platform-icon parttime">J</span><span><b>Part-time job</b><small>Other employment</small></span><strong id="srcParttime">₹0</strong></button>
+        <button class="platform-card" data-source="Other income"><span class="platform-icon other">+</span><span><b>Other income</b><small>Additional earnings</small></span><strong id="srcOther">₹0</strong></button>
       </div>
 
       <div class="analytics-grid">
         <article class="white-panel">
-          <div class="panel-title">
-            <div><span class="eyebrow">ANALYTICS</span><h3>Income breakdown</h3></div>
-            <span class="live-label">● LIVE DATA</span>
-          </div>
+          <div class="panel-title"><div><span class="eyebrow">ANALYTICS</span><h3>Income breakdown</h3></div><span class="live-label">● LIVE DATA</span></div>
           <div id="sourceBars" class="bars"></div>
         </article>
-
         <article class="white-panel">
-          <div class="panel-title">
-            <div><span class="eyebrow">SPENDING</span><h3>Expense breakdown</h3></div>
-          </div>
+          <div class="panel-title"><div><span class="eyebrow">SPENDING</span><h3>Expense breakdown</h3></div></div>
           <div id="expenseBars" class="bars"></div>
         </article>
       </div>
 
       <article class="white-panel transaction-panel">
-        <div class="panel-title">
-          <div><span class="eyebrow">LEDGER HISTORY</span><h3>Recent transactions</h3></div>
-          <button class="text-btn" data-goto="transactions">View all →</button>
-        </div>
+        <div class="panel-title"><div><span class="eyebrow">LEDGER HISTORY</span><h3>Recent transactions</h3></div><button class="text-btn" data-goto="transactions">View all →</button></div>
         <div class="table-wrap">
           <table>
-            <thead>
-              <tr><th>DESCRIPTION</th><th>SOURCE</th><th>DATE</th><th>TYPE</th><th class="right">AMOUNT</th></tr>
-            </thead>
+            <thead><tr><th>DESCRIPTION</th><th>SOURCE</th><th>DATE</th><th>TYPE</th><th class="right">AMOUNT</th></tr></thead>
             <tbody id="recentRows"></tbody>
           </table>
         </div>
       </article>
     </section>
 
-    <!-- TRANSACTIONS -->
     <section id="transactionsPage" class="page">
       <div class="section-heading">
         <div><span class="eyebrow light-eyebrow">LEDGER HISTORY</span><h2>All transactions</h2><p>Manage your income and expenses.</p></div>
         <button class="primary-btn" id="newEntry">＋ Add entry</button>
       </div>
-
       <article class="white-panel">
         <div class="filters">
           <input id="searchInput" placeholder="Search transactions...">
-          <select id="typeFilter">
-            <option value="all">All types</option>
-            <option value="income">Income</option>
-            <option value="expense">Expense</option>
-          </select>
+          <select id="typeFilter"><option value="all">All types</option><option value="income">Income</option><option value="expense">Expense</option></select>
           <select id="sourceFilter"><option value="all">All sources</option></select>
           <button class="outline-btn" id="exportCsv">↓ Export CSV</button>
           <label class="outline-btn upload-btn">↑ Import CSV<input id="importCsv" type="file" accept=".csv"></label>
         </div>
-
         <div class="table-wrap">
           <table>
-            <thead>
-              <tr><th>DESCRIPTION</th><th>SOURCE</th><th>DATE</th><th>TYPE</th><th class="right">AMOUNT</th><th>ACTION</th></tr>
-            </thead>
+            <thead><tr><th>DESCRIPTION</th><th>SOURCE</th><th>DATE</th><th>TYPE</th><th class="right">AMOUNT</th><th>ACTION</th></tr></thead>
             <tbody id="allRows"></tbody>
           </table>
         </div>
@@ -285,7 +390,6 @@
       </article>
     </section>
 
-    <!-- INSIGHTS -->
     <section id="insightsPage" class="page">
       <div class="section-heading">
         <div><span class="eyebrow light-eyebrow">FINANCIAL ANALYTICS</span><h2>Your financial insights</h2><p>Understand your income and spending.</p></div>
@@ -303,13 +407,11 @@
       <p class="insight-note">These figures are calculated from user-entered records. They are not bank-verified income or tax advice.</p>
     </section>
 
-    <!-- STATEMENT -->
     <section id="statementPage" class="page">
       <div class="section-heading">
         <div><span class="eyebrow light-eyebrow">FINANCIAL SUMMARY</span><h2>Your earnings statement</h2><p>Your personal financial summary.</p></div>
         <button class="primary-btn" id="printStatement">↓ Download / Print PDF</button>
       </div>
-
       <article class="statement" id="statementSheet">
         <div class="statement-header">
           <div class="brand statement-brand"><span class="logo">G</span><span>GIGLEDGER<small>YOUR WORK. ONE LEDGER.</small></span></div>
@@ -324,10 +426,8 @@
           <div><small>TOTAL EXPENSES</small><b class="negative" id="stExpenses">₹0</b></div>
           <div><small>NET EARNINGS</small><b id="stNet">₹0</b></div>
         </div>
-        <h3>Income by source</h3>
-        <div id="statementSources"></div>
-        <h3>Expense summary</h3>
-        <div id="statementExpenses"></div>
+        <h3>Income by source</h3><div id="statementSources"></div>
+        <h3>Expense summary</h3><div id="statementExpenses"></div>
         <p class="disclaimer">This statement is generated from user-entered records. It is not an official payslip, bank statement or income certificate.</p>
       </article>
     </section>
@@ -336,7 +436,6 @@
   </main>
 </div>
 
-<!-- ADD ENTRY MODAL -->
 <dialog id="entryDialog">
   <form id="entryForm">
     <div class="modal-heading">
@@ -357,6 +456,92 @@
     </div>
   </form>
 </dialog>
+
+<!-- GIGLEDGER SMART IMPORT -->
+<dialog id="smartImportDialog" class="smart-import-dialog">
+  <div class="smart-import-header">
+    <div>
+      <span class="eyebrow">SMART TRANSACTION READER</span>
+      <h2>Import your earnings</h2>
+      <p>Upload a bank statement or payment screenshot.</p>
+    </div>
+    <button type="button" id="closeSmartImport" class="close-btn">×</button>
+  </div>
+
+  <div class="smart-upload-grid">
+    <label class="smart-upload-card" for="statementUpload">
+      <span class="smart-upload-icon">📄</span>
+      <strong>Bank statement</strong>
+      <small>PDF, CSV or Excel-exported CSV</small>
+      <span class="smart-upload-action">Choose statement</span>
+    </label>
+
+    <label class="smart-upload-card" for="screenshotUpload">
+      <span class="smart-upload-icon">🖼</span>
+      <strong>Payment screenshots</strong>
+      <small>PNG, JPG, JPEG or WebP</small>
+      <span class="smart-upload-action">Choose screenshots</span>
+    </label>
+  </div>
+
+  <input id="statementUpload" type="file"
+    accept=".pdf,.csv,text/csv,application/pdf" hidden>
+
+  <input id="screenshotUpload" type="file"
+    accept="image/png,image/jpeg,image/webp" multiple hidden>
+
+  <div id="smartImportStatus" class="smart-import-status">
+    Your uploaded files will be processed in this browser.
+  </div>
+
+  <div id="smartImportProgress" class="smart-progress" hidden>
+    <div id="smartProgressBar"></div>
+  </div>
+
+  <div id="smartImportResults" hidden>
+    <div class="smart-results-heading">
+      <div>
+        <span class="eyebrow">EXTRACTED TRANSACTIONS</span>
+        <h3>Review before saving</h3>
+      </div>
+      <span id="smartResultCount" class="smart-count">0 records</span>
+    </div>
+
+    <div class="smart-table-wrap">
+      <table class="smart-table">
+        <thead>
+          <tr>
+            <th>ADD</th>
+            <th>DATE</th>
+            <th>DESCRIPTION</th>
+            <th>SOURCE</th>
+            <th>TYPE</th>
+            <th>AMOUNT (₹)</th>
+          </tr>
+        </thead>
+        <tbody id="smartImportRows"></tbody>
+      </table>
+    </div>
+
+    <div class="smart-import-warning">
+      Check every amount, date and transaction type. OCR can make mistakes.
+      Duplicates are flagged for review.
+    </div>
+
+    <div class="smart-import-actions">
+      <button type="button" id="cancelSmartImport" class="outline-btn">
+        Cancel
+      </button>
+      <button type="button" id="confirmSmartImport" class="primary-btn">
+        Confirm and add to ledger →
+      </button>
+    </div>
+  </div>
+</dialog>
+
+<!-- PDF.js and Tesseract OCR libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
 
 <div id="toast" class="toast" role="status"></div>
 <script src="./app.js"></script>
