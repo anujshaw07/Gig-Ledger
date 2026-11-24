@@ -4862,3 +4862,203 @@ body::before {
     display: none !important;
   }
 }
+
+
+/* ==========================================================
+   GIGLEDGER — ENHANCED MOBILE SCREEN ADAPTATION
+   Refined for mobile screens, tap targets, safe areas,
+   modals, forms, tables, and touch responsiveness.
+========================================================== */
+
+@media (max-width: 760px) {
+  /* Safe area handling for modern notched phones */
+  :root {
+    --sat: env(safe-area-inset-top, 0px);
+    --sab: env(safe-area-inset-bottom, 0px);
+    --sal: env(safe-area-inset-left, 0px);
+    --sar: env(safe-area-inset-right, 0px);
+  }
+
+  body {
+    padding-top: var(--sat);
+    padding-bottom: var(--sab);
+    padding-left: var(--sal);
+    padding-right: var(--sar);
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  /* Header mobile optimization */
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  /* Horizontal swipeable navigation with smooth touch scroll */
+  .navigation {
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+    overscroll-behavior-x: contain;
+  }
+
+  .nav-link {
+    scroll-snap-align: start;
+    min-height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Interactive touch target improvements: comfortable 44px minimum tap size */
+  button,
+  .primary-btn,
+  .outline-btn,
+  .glass-btn,
+  .auth-tab,
+  .demo-btn,
+  .logout-btn,
+  .upload-btn {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    touch-action: manipulation;
+  }
+
+  /* Prevent automatic iOS zoom on input focus */
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+
+  /* Add transaction modal on mobile: full, comfortable bottom/sheet style */
+  #entryDialog {
+    width: min(100% - 20px, 460px) !important;
+    max-height: 90dvh !important;
+    padding: 20px 16px !important;
+    border-radius: 20px !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    margin: auto !important;
+  }
+
+  .modal-heading {
+    margin-bottom: 15px !important;
+  }
+
+  .modal-heading h2 {
+    font-size: 19px !important;
+  }
+
+  .close-btn {
+    width: 38px !important;
+    height: 38px !important;
+    min-height: 38px !important;
+    font-size: 24px !important;
+    display: grid !important;
+    place-items: center !important;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  .form-grid .full {
+    grid-column: 1 / -1 !important;
+  }
+
+  .form-grid input,
+  .form-grid select {
+    padding: 12px !important;
+    border-radius: 10px !important;
+  }
+
+  .modal-actions {
+    flex-direction: column !important;
+    gap: 8px !important;
+    margin-top: 18px !important;
+  }
+
+  .modal-actions button {
+    width: 100% !important;
+  }
+
+  /* Filters section on transactions page */
+  .filters {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+  }
+
+  .filters input#searchInput {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    padding: 12px !important;
+  }
+
+  .filters select {
+    width: 100% !important;
+    min-width: 0 !important;
+    padding: 11px !important;
+  }
+
+  .filters #exportCsv,
+  .filters .upload-btn {
+    width: 100% !important;
+    text-align: center !important;
+    padding: 10px 8px !important;
+    font-size: 11px !important;
+  }
+
+  /* Statement card mobile responsiveness */
+  .statement {
+    padding: 20px 14px !important;
+    border-radius: 18px !important;
+  }
+
+  .statement-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+  }
+
+  .statement-person {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+  }
+
+  .period {
+    text-align: left !important;
+  }
+
+  .statement-totals {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+    padding: 14px !important;
+  }
+
+  .statement-totals b {
+    font-size: 19px !important;
+  }
+
+  /* Ensure smooth horizontal scroll cues for tables */
+  .table-wrap,
+  .smart-table-wrap {
+    overscroll-behavior-x: contain;
+    border-radius: 10px;
+  }
+
+  /* Footer spacing on mobile */
+  footer {
+    padding: 24px 10px 32px !important;
+    font-size: 10px !important;
+    text-align: center !important;
+  }
+}
